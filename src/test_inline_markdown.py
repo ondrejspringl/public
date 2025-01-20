@@ -1,6 +1,5 @@
 import unittest
 from inline_markdown import *
-
 from textnode import *
 
 
