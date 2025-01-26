@@ -54,9 +54,9 @@ This is the same paragraph on a new line
         block = "> quote\n> more quote"
         self.assertEqual(block_to_block_type(block), block_type_quote)
         block = "* list\n* items"
-        self.assertEqual(block_to_block_type(block), block_type_unordered_list)
+        self.assertEqual(block_to_block_type(block), block_type_ulist)
         block = "1. list\n2. items"
-        self.assertEqual(block_to_block_type(block), block_type_ordered_list)
+        self.assertEqual(block_to_block_type(block), block_type_olist)
         block = "paragraph"
         self.assertEqual(block_to_block_type(block), block_type_paragraph)
 
